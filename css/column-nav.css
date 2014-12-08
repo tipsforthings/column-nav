@@ -1,0 +1,270 @@
+/* ALXS Column Navigation */
+
+/* Main Styles */
+
+body {
+	background: #FFF;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+border: 0;
+font-family: inherit;
+font-size: 100%;
+font-style: inherit;
+font-weight: inherit;
+margin: 0;
+outline: 0;
+padding: 0;
+vertical-align: baseline;
+}
+body, button, input, select, textarea {
+color: #404040;
+font-family: sans-serif;
+font-size: 16px;
+font-size: 1.6rem;
+line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6 {
+clear: both;
+}
+mark, ins, a {
+color: #FFF;
+}
+
+.outer-wrap {
+position: relative;
+z-index: 1;
+margin: auto;
+}
+.inner {
+width: 1000px;
+margin: 0 auto;
+padding: 0;
+position: relative;
+z-index: 99999999;
+min-width: 97% !important;
+width: 97% !important;
+margin-left: 3%;
+background: #FFF;
+}
+
+/* Navigation */
+
+#navigation-wrap {
+width: auto;
+float: left;
+}
+#navigation-header {
+width: 248px;
+margin: 0;
+padding: 0;
+border-left: 1px solid #1b1b1b;
+border-right: 1px solid #1b1b1b;
+float: left;
+}
+#navigation-header .brand {
+width: 100%;
+margin: 0;
+padding: 60px 0 30px;
+text-align: center;
+}
+#navigation-header .brand h1.site-title a:hover {
+color: #FFF;
+}
+#navigation-header .brand h1.site-title a {
+font: 700 45px 'Roboto Condensed', Arial;
+text-decoration: none;
+}
+#navigation {
+width: 100%;
+margin: 0;
+padding: 0 0 60px;
+background: url(../img/menu-bg.png);
+text-transform: uppercase;
+font: 300 16px 'Roboto Condensed', Arial;
+}
+#navigation-wrap ul {
+margin-left: 0px;
+list-style: none;
+margin: 0px;
+padding: 0px;
+}
+#navigation-wrap .accordion {
+*zoom: 1;
+margin-bottom: 0;
+}
+#navigation-wrap .accordion:before, 
+#navigation-wrap .accordion:after {
+    content: " ";
+    display: table; 
+}
+.accordion:after {
+    clear: both; 
+}
+@media screen and (max-width:960px) {
+
+}
+#navigation-wrap .accordion dd > .hasContent:after {
+font-family: FontAwesome;
+content: "\f078";
+float: right;
+padding-right: 1rem;
+}
+#navigation-wrap .accordion dd.active > .hasContent:after {
+font-family: FontAwesome;
+content: "\f077";
+float: right;
+padding-right: 1rem;
+}
+.accordion a {
+display: block;
+position: relative;
+list-style: none;
+border-top: 1px #2c2d2e solid;
+border-bottom: 1px #040506 solid;
+padding: 0;
+line-height: normal;
+}
+.accordion dd {
+display: block;
+position: relative;
+list-style: none;
+border-top: 0px #2c2d2e solid;
+border-bottom: 0px #040506 solid;
+padding: 0;
+line-height: normal;
+}
+.accordion dd > a {
+display: block;
+position: relative;
+list-style: none;
+border-top: 1px #2c2d2e solid;
+border-bottom: 1px #040506 solid;
+padding: 0;
+line-height: normal;
+background: transparent;
+color: #FFF;
+font: 300 16px 'Roboto Condensed', Arial;
+}
+.accordion .accordion-navigation>.content.active, .accordion dd>.content.active {
+display: block;
+background: transparent;
+padding: 0px;
+}
+#navigation dl a {
+background: url(../img/nav-icon.png) no-repeat 20px center;
+padding: 6px 0 6px 49px;
+display: block;
+font-weight: 300;
+text-decoration: none;
+}
+#navigation dl:hover, #navigation dl.current_page_item {
+background: url(../img/menu-hover.png) no-repeat 20px center;
+}
+a:hover, a:focus {
+color: #e3e3e3;
+background-color: #262626;
+background: url(../img/nav-icon-hover.png) no-repeat 20px center !important;
+}
+#navigation dl .content a, #navigation dl .content a:active, #navigation dl .content a:hover {
+background: none !important;
+}
+#navigation-footer {
+width: 100%;
+margin: 0;
+padding: 0;
+background: url(../img/header-bottom-shape.png) no-repeat bottom;
+height: 53px;
+}
+#navigation-footer-shape {
+background: url(../img/header-bottom-shape2.png) no-repeat top;
+width: 75px;
+height: 44px;
+cursor: pointer;
+margin-left: 86px;
+}
+/*
+
+
+
+
+
+
+
+
+
+#navigation dl dd div a {
+background: transparent;
+padding: 12px 0 6px 49px;
+display: block;
+font-weight: 300;
+text-decoration: none;
+}
+.accordion .accordion-navigation>a:hover, .accordion dd>a:hover {
+background: #e3e3e3 !important;
+color: #262626;
+}
+a:hover, a:focus {
+background: #e3e3e3;
+color: #262626;
+}
+.accordion .accordion-navigation>.content.active > a, .accordion dd>.content.active > a{
+padding-left: 1rem;
+}
+.accordion .accordion-navigation.active>a, .accordion dd.active>a {
+background: #e3e3e3;
+}
+#navigation dl dd div a:active, #navigation dl dd div a:hover {
+background: #e3e3e3;
+padding: 12px 0 6px 49px;
+display: block;
+font-weight: 300;
+text-decoration: none;
+}
+#navigation dl a:hover, #navigation dl a:active {
+background: url(../img/nav-icon-hover.png) no-repeat 20px center;
+}
+  .accordion  dd > .hasContent:after{
+    font-family: FontAwesome;
+    content: "\f078";
+    float: right; }
+  .accordion  dd.active >.hasContent:after{
+    font-family: FontAwesome;
+    content: "\f077";
+    float: right; }
+  .accordion dd {
+    display: block;
+    margin-bottom: 0 !important; }
+    .accordion dd.active a {
+      background: #252b38; }
+    .accordion dd > a {
+      background: #323a4a;
+      color: #fff;
+      border-top: 1px solid #252b38;
+      padding: 1rem;
+      display: block;
+      font-family: "Open Sans", "Helvetica", Helvetica, Arial, sans-serif;
+      font-size: 1rem; }
+    .accordion dd > a:hover {
+      background: #252b38; }
+  .accordion .content a{
+    padding-left: 2rem; }
+    .accordion .content .content a{
+      padding-left: 4rem; }
+  .accordion a{
+    background: #323a4a;
+    color: #fff;
+    border-top: 1px solid #252b38;
+    padding: 1rem;
+    display: block;
+    font-family: "Open Sans", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 1rem; }
+  .accordion a:hover{
+    background: #252b38; }
+  .accordion .content {
+    display: none;
+    padding: 0; }
+    .accordion .content.active {
+    display: block;
+    background: white; }
+    
+    */
