@@ -36,6 +36,11 @@ margin: 0;
 padding: 60px 0 30px;
 background: url(../images/menu-bg.png);
 text-align: center;
+transition: all 0.5s ease;
+transition-property: all;
+transition-duration: 0.5s;
+transition-timing-function: ease;
+transition-delay: initial;
 }
 #secondary a, #footer-sidebar a {
 text-decoration: none;
@@ -43,6 +48,7 @@ text-decoration: none;
 .header .logo h1.site-title a {
 font: 700 45px 'Roboto Condensed', Arial;
 text-decoration: none;
+font-size: 4rem;
 }
 a:hover, a:focus, a:active {
 color: #eeeded;
@@ -165,6 +171,13 @@ dd.nav {
     clear: both; 
 }
 @media screen and (max-width:960px) {
+.header .logo {
+padding: 0px;
+height: 0px;
+}
+.header .logo h1, .header .logo h2 {
+display: none;
+}
 
 }
 .navigation-links .accordion dd > .hasContent:after {
@@ -221,7 +234,8 @@ display: block;
 font-weight: 300;
 text-decoration: none;
 }
-.navigation-links dl:hover, .navigation-links dl.current_page_item {
+.navigation-links dl:hover, .navigation-links dl.current_page_item,
+.accordion .accordion-navigation.active>a, .accordion dd.active>a,  .accordion dd.active>a:focus  {
 background: url(../images/menu-hover.png) no-repeat 20px center;
 }
 a:hover, a:focus {

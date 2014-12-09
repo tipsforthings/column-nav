@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="css/foundation.min.css" />
     <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Roboto+Condensed%3A400%2C300%2C300italic%2C400italic%2C700%2C700italic&#038;ver=3.9.3' type='text/css' media='all' />
 	<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Roboto%3A400%2C300%2C700&#038;ver=3.9.3' type='text/css' media='all' />
-    <link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='css/main.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='css/random.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='../css/font-awesome.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='../css/main.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='../css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='../css/random.css' type='text/css' media='all' />
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
@@ -79,6 +79,24 @@
         jQuery( "#site-nav dd:last" ).addClass("noBottomBorder");
         jQuery( "#site-nav li:parent" ).find('ul.sub-menu').parent().addClass("haschild");
     });
+	jQuery( "#site-nav dd:last" ).addClass("noBottomBorder");
+    jQuery( "#site-nav li:parent" ).find('ul.sub-menu').parent().addClass("haschild");
+	</script>
+	<script>
+    function changeDrop() {
+ var documentSize = $(document).width();
+
+    if (documentSize > 960) {
+            jQuery( "#site-nav" ).slideDown("slow");
+    }
+
+    else {          
+        jQuery( "#site-nav" ).slideUp("slow");
+    } 
+ }
+
+ changeDrop();
+ $(window).resize(changeDrop);
 	</script>
   </body>
 </html>
