@@ -49,6 +49,7 @@ text-decoration: none;
 font: 700 45px 'Roboto Condensed', Arial;
 text-decoration: none;
 font-size: 4rem;
+color: #FFD700;
 }
 a:hover, a:focus, a:active {
 color: #eeeded;
@@ -170,6 +171,15 @@ dd.nav {
 .accordion:after {
     clear: both; 
 }
+@media screen and (max-height:300px) {
+.header .logo {
+padding: 0px;
+height: 0px;
+}
+.header .logo h1, .header .logo h2 {
+display: none;
+}
+}
 @media screen and (max-width:960px) {
 .header .logo {
 padding: 0px;
@@ -197,7 +207,7 @@ display: block;
 position: relative;
 list-style: none;
 border-top: 1px #2c2d2e solid;
-border-bottom: 1px #040506 solid;
+border-bottom: 1px #FFD700 solid;
 padding: 0;
 line-height: normal;
 }
@@ -215,11 +225,11 @@ display: block;
 position: relative;
 list-style: none;
 border-top: 1px #2c2d2e solid;
-border-bottom: 1px #040506 solid;
+border-bottom: 1px #FFD700 solid;
 padding: 0;
 line-height: normal;
 background: transparent;
-color: #FFF;
+color: #FFD700;
 font: 300 16px 'Roboto Condensed', Arial;
 }
 .accordion .accordion-navigation>.content.active, .accordion dd>.content.active {
@@ -239,14 +249,16 @@ text-decoration: none;
 background: url(../images/menu-hover.png) no-repeat 20px center;
 }
 a:hover, a:focus {
-color: #e3e3e3;
+color: #ffd700;
 background-color: #262626;
 background: url(../images/nav-icon-hover.png) no-repeat 20px center !important;
 }
 .navigation-links dl .content a, .navigation-links dl .content a:active, .navigation-links dl .content a:hover {
 background: none !important;
 }
-
+.topBorder {
+border-top: 1px #FFD700 solid !important;
+}
 
 @media screen and (max-width: 960px) and (min-width: 768px) {
 	#wrapper {

@@ -11,12 +11,14 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	font-size: 100%;
 	font-style: inherit;
 	font-weight: inherit;
+	text-rendering: optimizeLegibility !important;
 	margin: 0;
 	outline: 0;
 	padding: 0;
 	vertical-align: baseline;
 	color: #aeaeae;
 }
+
 html {
 	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
 	overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
