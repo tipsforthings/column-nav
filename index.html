@@ -3,46 +3,60 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ALXS Column Nav | Welcome</title>
+    <title>ALXS | Column Navigation</title>
     <link rel="stylesheet" href="css/foundation.min.css" />
-    <link rel="stylesheet" href="css/column-nav.css" />
     <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Roboto+Condensed%3A400%2C300%2C300italic%2C400italic%2C700%2C700italic&#038;ver=3.9.3' type='text/css' media='all' />
 	<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Roboto%3A400%2C300%2C700&#038;ver=3.9.3' type='text/css' media='all' />
     <link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/main.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/random.css' type='text/css' media='all' />
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
-	<div class="outer-wrap">
-		<div class="inner">
-			<div id="navigation-wrap">
-				<div id="navigation-header">
-					<div class="brand">
-						<h1 class="site-title"><a href="#" rel="home">COLUMN NAVIGATION</a></h1>
+	<div id="page">
+		<div id="wrapper">
+			<div id="secondary">
+				<div class="header">
+					<div class="logo">
+						<h1 class="site-title">
+							<a href="#" rel="home">
+								COLUMN NAVIGATION
+							</a>
+						</h1>
+						<h2 class="site-description">by ALXS</h2>
 						<br>
 					</div>
-				</div>
-				<div id="navigation">
-					<dl data-accordion="" class="accordion">
-						<a href="#">Link 1</a>          
-						<dd>
-							<a class="hasContent" href="#panel1">Link 2</a>
-							<div id="panel1" class="content">
-								<a href="#">Link 2-1</a>              
-								<a href="#">Link 2-2</a>            
-							</div>
-						</dd>
-						<dd>
-							<a class="hasContent" href="#panel2">Link 3</a>
-							<div id="panel2" class="content">
-								<a href="#">Link 3-1</a>            
-								<a href="#">Link 3-2</a>      
-							</div>
-						</dd>
-					</dl>
-				</div>
-				<div id="navigation-footer">
-					<div id="navigation-footer-shape">
-                    </div>
+					<!-- End Logo -->
+					<div id="site-nav">
+						<div class="screen-reader-text skip-link">
+							<a href="#content">Skip to content</a>
+						</div>
+						<div class="navigation-links">
+							<dl data-accordion="" class="accordion">
+								<a href="#">Link 1</a>          
+								<dd class="nav">
+									<a class="hasContent" href="#panel1">Link 2</a>
+									<div id="panel1" class="content">
+										<a href="#">Link 2-1</a>              
+										<a href="#">Link 2-2</a>            
+									</div>
+								</dd>
+								<dd class="nav">
+									<a class="hasContent" href="#panel2">Link 3</a>
+									<div id="panel2" class="content">
+										<a href="#">Link 3-1</a>            
+										<a href="#">Link 3-2</a>      
+									</div>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- End Site Nav -->
+					<div class="header-bottom">
+						<div id="header-bottom-shape" class="">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -52,9 +66,19 @@
     <script>
       $(document).foundation();
     </script>
-    <script src="js/superfish.min.js"></script>
-    <script src="js/hoverIntent.js"></script>
-    	<script>
+    <script>
+    jQuery(document).ready(function() {
+        jQuery("#header-bottom-shape").click(function(){
+            if ( jQuery( "#site-nav" ).is( ":hidden" ) ) {
+                jQuery( "#site-nav" ).slideDown("slow");
+            } else {
+                jQuery( "#site-nav" ).slideUp("slow");
+            }
+            jQuery( this ).toggleClass('showDown');
+        });
+        jQuery( "#site-nav dd:last" ).addClass("noBottomBorder");
+        jQuery( "#site-nav li:parent" ).find('ul.sub-menu').parent().addClass("haschild");
+    });
 	</script>
   </body>
 </html>

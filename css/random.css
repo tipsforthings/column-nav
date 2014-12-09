@@ -1,0 +1,18 @@
+.goog-tooltip {display: none !important;}
+.goog-tooltip:hover {display: none !important;}
+.goog-text-highlight {background-color: transparent !important; border: none !important; box-shadow: none !important;}
+#google_language_translator a {display: none !important; }
+.goog-te-gadget {color:transparent !important;}
+.goog-te-gadget { font-size:0px !important; }
+.goog-branding { display:none; }
+#google_language_translator { display:none; }
+#flags { display:none; }
+#google_language_translator {color: transparent;}
+body { top:0px !important; }
+.main-navigation {	margin-bottom: -5px;}
+.main-navigation {	margin-bottom: 15px;}
+#site-nav ul li a:hover, #site-nav li.current_page_item a{background-image:url(http://www.liverpooltourists.com/wp-content/themes/skt-full-width/images/nav-icon-hover.png)}
+#site-nav ul li a:hover, #site-nav li.current_page_item a, div.slide-title a:hover{color:#ffffff;}
+mark, ins, a, .header .logo h1.site-title:first-letter, h2#page-title:first-letter,.archive h1.page-title:first-letter,.page h1.entry-title:first-letter, h2#page-title:first-letter,.archive h1.page-title:first-letter,.page h1.entry-title:first-letter, .single-post h1.entry-title:first-letter, .entry-meta a, .search h1.entry-title:first-letter,.archive h1.entry-title:first-letter, .read-more a:hover, .recent-post .post-box .post-text a, aside ul li a:hover, .widget ul li a:hover, h3.company-title:first-letter, .footer-menu ul li a:hover, .social a:hover, .footer-bottom a{color:#ffffff;}button, html input[type="button"], input[type="reset"],input[type="submit"]{background-color:#ffffff;}
+.pagination ul  > li  > a, .pagination ul  > li  > span{background:linear-gradient(#ffffff, #ffffff) !important; background:-moz-linear-gradient(#ffffff, #ffffff) !important; background:-webkit-linear-gradient(#ffffff, #ffffff) !important; background:-o-linear-gradient(#ffffff, #ffffff) !important;}
+.pagination ul  > li:hover > a, .pagination ul  > li > span.current{background:linear-gradient(#ffffff, #ffffff) !important; background:-moz-linear-gradient(#ffffff, #ffffff) !important; background:-webkit-linear-gradient(#ffffff, #ffffff) !important; background:-o-linear-gradient(#ffffff, #ffffff) !important;}
