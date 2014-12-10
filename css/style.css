@@ -171,21 +171,21 @@ dd.nav {
 .accordion:after {
     clear: both; 
 }
-@media screen and (max-height:300px) {
+@media screen and (max-height:450px) {
 .header .logo {
 padding: 0px;
-height: 0px;
+height: auto;
 }
-.header .logo h1, .header .logo h2 {
+.header .logo h2 {
 display: none;
 }
 }
 @media screen and (max-width:960px) {
 .header .logo {
 padding: 0px;
-height: 0px;
+height: auto;
 }
-.header .logo h1, .header .logo h2 {
+.header .logo h2 {
 display: none;
 }
 
