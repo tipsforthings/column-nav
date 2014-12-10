@@ -63,41 +63,9 @@
 	</div>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/responsive-menu.js"></script>
     <script>
       $(document).foundation();
     </script>
-    <script>
-    jQuery(document).ready(function() {
-        jQuery("#header-bottom-shape").click(function(){
-            if ( jQuery( "#site-nav" ).is( ":hidden" ) ) {
-                jQuery( "#site-nav" ).slideDown("slow");
-            } else {
-                jQuery( "#site-nav" ).slideUp("slow");
-            }
-            jQuery( this ).toggleClass('showDown');
-        });
-        jQuery( "#site-nav dd:last" ).addClass("noBottomBorder");
-        jQuery( ".navigation-links a:first" ).addClass("topBorder");
-        jQuery( "#site-nav li:parent" ).find('ul.sub-menu').parent().addClass("haschild");
-    });
-	jQuery( "#site-nav dd:last" ).addClass("noBottomBorder");
-    jQuery( "#site-nav li:parent" ).find('ul.sub-menu').parent().addClass("haschild");
-	</script>
-	<script>
-    function changeDrop() {
- var documentSize = $(document).width();
-
-    if (documentSize > 960) {
-            jQuery( "#site-nav" ).slideDown("slow");
-    }
-
-    else {          
-        jQuery( "#site-nav" ).slideUp("slow");
-    } 
- }
-
- changeDrop();
- $(window).resize(changeDrop);
-	</script>
   </body>
 </html>
